@@ -146,7 +146,7 @@ CERINȚE PENTRU ANALIZĂ:
 - Menționează implicații potențiale ale acestor Fake News asupra opiniei publice și a climatului social/politic
 - Fii obiectiv și echilibrat
 - Parcurge sistematic TOATE știrile din prompt, una câte una; nu te limita la câteva exemple, ci ia în considerare întreaga listă
-- Pentru concluzie: oferă o sinteză FOARTE EXTINSĂ (minimum 16-20 rânduri, ~800-1000 cuvinte), împărțită în paragrafe scurte, și care să acopere:
+- Pentru concluzie: oferă o sinteză FOARTE EXTINSĂ (minimum 16-20 rânduri, ~600-800 cuvinte), împărțită în paragrafe scurte, și care să acopere:
   * Rezumatul principalelor teme/evenimente ale zilei
   * Explicarea pe scurt a contextului principalelor evenimente, pentru un cititor care NU cunoaște știrile
   * Conexiuni și tendințe identificate
