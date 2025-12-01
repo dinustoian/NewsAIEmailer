@@ -225,10 +225,15 @@ def send_email_with_gmail(
     credentials_file: Optional[str] = None,
     token_file: Optional[str] = None,
     from_email: Optional[str] = None,
+    from_name: Optional[str] = None,
     is_html: bool = True,
 ) -> bool:
     """
     Send an email using the Gmail API with OAuth2 authentication.
+    
+    Args:
+        from_name: Display name for sender (e.g., "AI News"). If provided,
+                   the From header will show as "AI News <email@example.com>"
     """
     if not GMAIL_AVAILABLE:
         print(
@@ -302,7 +307,12 @@ def send_email_with_gmail(
         # Create the email message
         message = MIMEMultipart("alternative")
         message["to"] = ", ".join(to_email) if isinstance(to_email, list) else to_email
-        message["from"] = from_email
+        # Format "From" with display name if provided (e.g., "AI News <email@example.com>")
+        if from_name:
+            from email.utils import formataddr
+            message["from"] = formataddr((from_name, from_email))
+        else:
+            message["from"] = from_email
         message["subject"] = subject
         message["MIME-Version"] = "1.0"
 

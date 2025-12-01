@@ -54,6 +54,7 @@ def run_daily_news_flow(
                     to_email=recipient,
                     subject=settings.gmail.default_subject,
                     body=info_html,
+                    from_name="AI News",
                     is_html=True,
                 )
     else:
@@ -65,5 +66,3 @@ if __name__ == "__main__":
     # By default, keep the same behaviour as the original script:
     # generate the AI analysis and send it by email (since this is your workflow).
     run_daily_news_flow(send_email=True)
-
-

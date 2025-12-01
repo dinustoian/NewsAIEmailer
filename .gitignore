@@ -15,3 +15,5 @@ token.json
 
 # Environment variables
 .env
+DEPLOYMENT.md
+run_emailer.sh
