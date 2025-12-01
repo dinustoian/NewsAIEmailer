@@ -23,19 +23,3 @@ news-ai-emailer = "main:run_daily_news_flow"
 
 [tool.uv]
 package = true
-
-[project]
-name = "openai-test"
-version = "0.1.0"
-description = "News scraper with AI analysis and email functionality"
-requires-python = ">=3.8"
-dependencies = [
-    "python-dotenv",
-    "openai",
-    "requests",
-    "beautifulsoup4",
-    "google-auth",
-    "google-auth-oauthlib",
-    "google-auth-httplib2",
-    "google-api-python-client",
-]
