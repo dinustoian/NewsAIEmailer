@@ -1,0 +1,41 @@
+[project]
+name = "news-ai-emailer"
+version = "0.1.0"
+description = "Scrape Romanian news, analyze it with OpenAI, and optionally send a rich HTML summary via Gmail."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+dependencies = [
+    "python-dotenv",
+    "openai>=1.0.0",
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "google-api-python-client",
+    "requests",
+    "beautifulsoup4",
+]
+
+[project.scripts]
+news-ai-emailer = "main:run_daily_news_flow"
+
+[tool.uv]
+package = true
+
+[project]
+name = "openai-test"
+version = "0.1.0"
+description = "News scraper with AI analysis and email functionality"
+requires-python = ">=3.8"
+dependencies = [
+    "python-dotenv",
+    "openai",
+    "requests",
+    "beautifulsoup4",
+    "google-auth",
+    "google-auth-oauthlib",
+    "google-auth-httplib2",
+    "google-api-python-client",
+]
