@@ -21,5 +21,8 @@ dependencies = [
 [project.scripts]
 news-ai-emailer = "main:run_daily_news_flow"
 
+[tool.setuptools.packages.find]
+include = ["config*", "functions*"]
+
 [tool.uv]
 package = true
